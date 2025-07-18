@@ -244,11 +244,11 @@ static struct hid_descriptor ipod_hid_desc2 = {
 	.bcdHID= cpu_to_le16(0x0111),
 	.bCountryCode=             0,
 	.bNumDescriptors =      1,
-	.desc = {{
+	.rpt_desc = {
 		.bDescriptorType = 34,
 		.wDescriptorLength = cpu_to_le16(sizeof(ipod_hid_report))
-	}
-	}
+	},
+	.opt_descs = {}
 };
 
 
